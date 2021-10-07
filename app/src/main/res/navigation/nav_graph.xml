@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dignity_driver"
+    app:startDestination="@id/splash">
+
+    <fragment
+        android:id="@+id/splash"
+        android:name="com.techskuad.reminderapp.fragment.SplashFragment"
+        android:label="Splash">
+        <action
+            android:id="@+id/action_splash_to_login"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/pop_enter"
+            app:exitAnim="@anim/exit"
+            app:popUpTo="@id/splash"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splash_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/pop_enter"
+            app:exitAnim="@anim/exit"
+            app:popUpTo="@id/splash"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.techskuad.reminderapp.fragment.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.techskuad.reminderapp.fragment.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_createReminderFragment"
+            app:destination="@id/createReminderFragment">
+
+
+
+        </action>
+
+
+        <action
+            android:id="@+id/action_homeFragment_to_editReminderFragment"
+            app:destination="@id/editReminderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createReminderFragment"
+        android:name="com.techskuad.reminderapp.fragment.CreateReminderFragment"
+        android:label="CreateReminderFragment" >
+        <action
+            android:id="@+id/action_createReminderFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/createReminderFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/editReminderFragment"
+        android:name="com.techskuad.reminderapp.fragment.EditReminderFragment"
+        android:label="EditReminderFragment" >
+        <argument
+            android:name="reminder_data"
+            app:argType="com.techskuad.reminderapp.model.ReminderModel"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_editReminderFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/editReminderFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+
+</navigation>

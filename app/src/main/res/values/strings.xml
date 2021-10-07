@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ReminderApp</string>
+    <string name="please_wait">Please wait..</string>
+    <string name="splash">Welcome</string>
+    <string name="let_s_sign_you_in">Let’s Sign You In</string>
+    <string name="welcome_back_you_ve_been_missed">Welcome back, you’ve been missed</string>
+    <string name="your_email">Enter your email</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign In</string>
+    <string name="network_error">Check your internet connection and Try Again!</string>
+    <string name="invalid_email">Invalid email address</string>
+    <string name="invalid_pass">Invalid password</string>
+    <string name="required_field">This field is required</string>
+    <string name="reminder">Reminder</string>
+    <string name="add_reminder">Add Reminder</string>
+    <string name="reminder_title">Reminder Title</string>
+    <string name="description">Description</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">weekly</string>
+    <string name="reminder_type">Please select reminder type</string>
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="type">Type</string>
+    <string name="edit_reminder">Edit Reminder</string>
+    <string name="update_reminder">Update Reminder</string>
+    <string name="reminder_previous_time_error">You can\'t set reminder at previous time.</string>
+    <string name="upcoming_reminder">Upcoming Reminder</string>
+    <string name="past_reminder">Past Reminder</string>
+</resources>
